@@ -11,6 +11,5 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 
 db.connectToDatabase().then(function () {
-    console.log("connected to DB")
     app.listen(3000);
 });
