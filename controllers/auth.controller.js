@@ -1,11 +1,9 @@
-const res = require("express/lib/response");
-
-function getSignup() {
-	res.render("signup");
+function getSignup(req, res) {
+	res.render("customer/auth/signup");
 }
 
-function getLogin() {
-	res.render("login");
+function getLogin(req, res) {
+	res.render("customer/auth/login");
 }
 
 module.exports = { 
